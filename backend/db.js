@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 const mongoURI =
-  "mongodb+srv://notesolicA:notesoicA@cluster0.gvxcv1m.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://notes:notes@cluster6.9pjud65.mongodb.net/?retryWrites=true&w=majority";
 
-const connectToMongo = async () => {
-  await mongoose.connect(mongoURI, () => {
+const connectToMongo = () => {
+  mongoose.connect(mongoURI, () => {
     console.log("connected");
   });
 };

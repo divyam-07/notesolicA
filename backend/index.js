@@ -1,6 +1,6 @@
 const express = require("express");
 const connectToMongo = require("./db");
-connectToMongo().catch((err) => console.log(err));
+connectToMongo();
 
 const app = express();
 const PORT = 1431 || process.env.PORT;
